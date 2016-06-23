@@ -15,6 +15,7 @@ namespace BCarGui_Windows {
 
         public BCarGui() {
             InitializeComponent();
+            coms_box.Items.Add("");
             coms_box.Items.Add("COM1");
             coms_box.Items.Add("COM2");
             coms_box.Items.Add("COM3");

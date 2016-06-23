@@ -24,5 +24,21 @@ namespace BCarGui_Windows{
         private void sendBt(_state message) {
             _btPort.WriteLine(message.ToString());
         }
+
+        private void ForwardButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void RightButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void ReverseButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void LeftButton_Click(object sender, EventArgs e) {
+
+        }
     }
 }
