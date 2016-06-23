@@ -24,7 +24,6 @@ namespace BCarGui_Windows {
         }
 
         private void coms_box_SelectedIndexChanged(object sender, EventArgs e) {
-
         }
 
         private void Connect_Click(object sender, EventArgs e) {
