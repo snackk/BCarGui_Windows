@@ -12,7 +12,7 @@ using System.IO.Ports;
 namespace BCarGui_Windows{
 
     public partial class RemoteControl : Form {
-        private enum _state { FORWARD, REVERSE, TURN_LEFT, TURN_RIGHT, BREAK };
+        private enum _state { F, B, L, R, P };
 
         private SerialPort _btPort;
 
@@ -22,7 +22,8 @@ namespace BCarGui_Windows{
         }
 
         private void sendBt(_state message) {
-            try {
+            try
+            {
                 _btPort.WriteLine(message.ToString());
             }
             catch (Exception) {
@@ -31,26 +32,26 @@ namespace BCarGui_Windows{
         }
 
         private void ForwardButton_Click(object sender, EventArgs e) {
-            sendBt(_state.FORWARD);
-            /*ONLY TO DEBUG*/
-            try {
+            sendBt(_state.F);
+            /*ONLY TO DEBUG - Echoes the command sent*/
+            /*try {
                 MessageBox.Show(_btPort.ReadLine());
             }
             catch (Exception) {
 
-            }
+            }*/
         }
 
         private void RightButton_Click(object sender, EventArgs e) {
-            sendBt(_state.TURN_RIGHT);
+            sendBt(_state.R);
         }
 
         private void ReverseButton_Click(object sender, EventArgs e) {
-            sendBt(_state.REVERSE);
+            sendBt(_state.B);
         }
 
         private void LeftButton_Click(object sender, EventArgs e) {
-            sendBt(_state.TURN_LEFT);
+            sendBt(_state.L);
         }
     }
 }

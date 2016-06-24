@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Windows.Forms;
 
-
+/*TODO Handshake, send Environment.MachineName*/
+/**/
 namespace BCarGui_Windows {
 
     public partial class BCarGui : Form {
