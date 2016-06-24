@@ -32,6 +32,13 @@ namespace BCarGui_Windows{
 
         private void ForwardButton_Click(object sender, EventArgs e) {
             sendBt(_state.FORWARD);
+            /*ONLY TO DEBUG*/
+            try {
+                MessageBox.Show(_btPort.ReadLine());
+            }
+            catch (Exception) {
+
+            }
         }
 
         private void RightButton_Click(object sender, EventArgs e) {
