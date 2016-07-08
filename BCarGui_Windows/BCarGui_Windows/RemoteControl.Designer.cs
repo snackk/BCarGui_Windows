@@ -66,7 +66,7 @@
             // 
             // ForwardButton
             // 
-            this.ForwardButton.Location = new System.Drawing.Point(102, 27);
+            this.ForwardButton.Location = new System.Drawing.Point(93, 32);
             this.ForwardButton.Name = "ForwardButton";
             this.ForwardButton.Size = new System.Drawing.Size(75, 23);
             this.ForwardButton.TabIndex = 4;
