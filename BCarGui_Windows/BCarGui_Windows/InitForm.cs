@@ -23,6 +23,10 @@ namespace BCarGui_Windows {
             coms_box.Items.Add("COM3");
             coms_box.Items.Add("COM4");
             coms_box.Items.Add("COM5");
+            coms_box.Items.Add("COM6");
+            coms_box.Items.Add("COM7");
+            coms_box.Items.Add("COM8");
+            coms_box.Items.Add("COM9");
         }
 
         private void coms_box_SelectedIndexChanged(object sender, EventArgs e) {
