@@ -25,6 +25,7 @@ namespace BCarGui_Windows{
             try
             {
                 _btPort.WriteLine(message.ToString());
+                //_btPort.WriteLine("S=255");  
             }
             catch (Exception) {
                 MessageBox.Show("Could not send data.");
